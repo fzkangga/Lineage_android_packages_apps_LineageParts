@@ -107,17 +107,18 @@
             android:label="@string/button_pref_title"
             android:icon="@drawable/ic_settings_buttons"
             android:targetActivity="PartsActivity">
-            <intent-filter android:priority="256">
+            <!--<intent-filter android:priority="256">-->
+            <intent-filter>
                 <action android:name="org.lineageos.lineageparts.action.SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.BUTTON_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            <meta-data
+            <!--<meta-data
                 android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.system" />
-            <meta-data
+                android:value="com.android.settings.category.ia.system" />-->
+            <!--<meta-data
                 android:name="com.android.settings.summary"
-                android:value="@string/summary_empty" />
+                android:value="@string/summary_empty" />-->
         </activity-alias>
 
         <activity android:name=".gestures.KeyHandler" />
@@ -147,17 +148,18 @@
             android:label="@string/status_bar_title"
             android:icon="@drawable/ic_settings_statusbar"
             android:targetActivity="PartsActivity">
-            <intent-filter android:priority="254">
+            <!--<intent-filter android:priority="254">-->
+            <intent-filter>
                 <action android:name="org.lineageos.lineageparts.action.SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.STATUS_BAR_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            <meta-data
+            <!--<meta-data
                 android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.system" />
-            <meta-data
+                android:value="com.android.settings.category.ia.system" />-->
+            <!--<meta-data
                 android:name="com.android.settings.summary"
-                android:resource="@string/summary_empty" />
+                android:resource="@string/summary_empty" />-->
         </activity-alias>
 
         <!-- Style settings (Display category) -->
